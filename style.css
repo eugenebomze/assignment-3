@@ -1,0 +1,101 @@
+
+html {
+	scroll-behavior: smooth;
+}
+html, body, .grid-container { height: 100%; margin: 0; }
+.a {
+.pointer {cursor: pointer;}
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+  grid-template-rows: 40% 40% 10%;
+  gap: 5% 5%;
+  grid-template-areas:
+    "pic word"
+    "word1 pic1"
+    "footer footer";
+}
+
+.footer { grid-area: footer; }
+
+.word1 { grid-area: word1; margin-left:20px;margin-bottom: 20px; }
+
+.pic1 { grid-area: pic1; margin-right:20px;margin-bottom: 20px;}
+
+.word { grid-area: word; margin-right:20px;margin-bottom: 20px;}
+
+.pic { grid-area: pic;margin-left:20px; margin-bottom: 20px;}
+
+.grid-container{ font-size: 2vw;}
+
+
+@media (min-width: 600px) {
+  .grid-container{ font-size: 1.5vw;}
+}
+
+button{
+
+  border: none;
+
+  padding: 20px 40px ;
+  text-align: center;
+  text-decoration: none;
+  text-weight: 600;
+  display: inline-block;
+  font-size: 15px;
+
+  cursor: pointer;
+}
+.button1 {background-color: #ebfff5;} 
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #65ab88; 
+  color: white;
+.pointer {cursor: pointer;}
+}
+
+* {box-sizing:border-box}
+
+h2 {
+  margin-left: 20px;
+color: #73c79c;}
+
+.bodytext {margin-left: 10px; margin-bottom:10px; font: 13px Arial, Helvetica, sans-serif;
+color: #040d43;
+text-align: justify;}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ffffffff;
+  padding: 20px;
+}
